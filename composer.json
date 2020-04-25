@@ -1,0 +1,36 @@
+{
+  "name": "veasey/report-builder",
+  "description": "A technical test entry to create a report class for Laravel",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Clint Veasey",
+      "email": "clint.veasey@gmail.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "autoload": {
+    "psr-4": {
+      "Veasey\\ReportBuilder\\": "src/",
+      "Veasey\\ReportBuilder\\Tests\\": "tests/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Veasey\\ReportBuilder\\ReportServiceProvider"
+      ],
+      "aliases": {
+        "ReportArray": "Veasey\\ReportBuilder\\Facades\\ReportArray",
+        "ReportCollection": "Veasey\\ReportBuilder\\Facades\\ReportCollection"
+      }
+    }
+  },
+  "require": {},
+  "require-dev": {
+    "orchestra/testbench": "^3.8"
+  },
+  "scripts": {
+    "test": "phpunit"
+  }
+}
